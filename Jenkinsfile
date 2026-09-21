@@ -37,5 +37,12 @@ pipeline {
         	sh 'echo Building application...'
 	    }
 	}
+        stage('Test') {
+            steps {
+                echo 'Running automated tests'
+                sh './test.sh'
+            }
+        }
     }
 }
+	 
