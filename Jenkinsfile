@@ -31,5 +31,11 @@ pipeline {
                 sh 'git --version'
             }
         }
+	stage('Build') {
+    	    steps {
+                echo 'Build stage started'
+        	sh 'echo Building application...'
+	    }
+	}
     }
 }
