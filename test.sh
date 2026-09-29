@@ -9,3 +9,4 @@ else
     echo "TEST FAILED: hello.txt missing"
     exit 1
 fi
+EOF
